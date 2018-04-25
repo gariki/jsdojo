@@ -3,5 +3,6 @@ var myBody = document.getElementsByTagName("body")[0];
 
 myBtn.addEventListener("click", function (){
     myBody.classList.toggle("colorbg");
+    console.log("test");
 });
 

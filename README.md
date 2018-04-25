@@ -1,0 +1,2 @@
+# jsdojo
+Random JS exercises

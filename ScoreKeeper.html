@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Score Keeper App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .greenText{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <h1><span id="p1score">0</span> to <span id="p2score">0</span></h1>
+
+        <h2>Playing to: <span id="winningScore"> 5 </span></h2>
+        <form action="#">
+            <input type="number" id="winNumber" min="1" max="20" value="5">
+            <input type="button" id="p1" value="Player One">
+            <input type="button" id="p2" value="Player Two">
+            <input type="button" id="reset" value="Reset">
+
+
+        </form>
+
+        <script src="scoreKeeper.js"></script>
+    </body>
+</html>

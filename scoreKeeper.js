@@ -28,6 +28,7 @@ function setWinningScore(){
     console.log("Winning Score is:" + winningScore);
     p1output.classList.remove("greenText");
     p2output.classList.remove("greenText");
+    resetScores();
     displayScores();
 }
 

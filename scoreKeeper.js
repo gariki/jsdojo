@@ -21,7 +21,7 @@ btnP2.name = "P2";
 btnP1.addEventListener("click", increment);
 btnP2.addEventListener("click", increment);
 btnReset.addEventListener("click", resetScores);
-btnCount.addEventListener("click", setWinningScore);
+btnCount.addEventListener("change", setWinningScore);
 
 function setWinningScore(){
     winningScore = document.getElementById("winNumber").value;

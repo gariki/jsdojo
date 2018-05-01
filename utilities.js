@@ -26,4 +26,8 @@ function generateRGB(){
 //     myRand(5);
 // }
 
+function colorString(c){
+    return "rgb("+c.r+","+c.g+","+c.b+")";
+}
+
 

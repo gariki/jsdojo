@@ -5,6 +5,9 @@ var puzzleColor = {};
 var tdElements = [];
 var nosOfBoxes = 0;
 var winner = -1;
+var boxes;
+var msg;
+
 
 generateBoard();
 showBoard();
@@ -43,6 +46,8 @@ function printColorPicks(){
 
 function showBoard(){
     boxes = document.querySelectorAll(".colorbox");
+    msg = document.getElementById("message");
+    
 
     for(let i=0; i<boxes.length; i++){
         boxes[i].style.backgroundColor = colorString(boxColors[i]);
@@ -50,10 +55,33 @@ function showBoard(){
             console.log("clicked box" + JSON.stringify(boxColors[i]));
             if(boxColors[i]===puzzleColor){
                 console.log("You win");
+                msg.innerText = "You Win!";
             }else{
                 console.log("Try again");
+                msg.innerHTML ="Try again!";    
+
+                boxes[i].style.backgroundColor = "white";
 
             }
         });
     }
 }
+
+var easyButton = document.getElementById("easy");
+var hardButton = document.getElementById("hard");
+easyButton.addEventListener("click", function makeEasy(){
+    gameStyle = "easy";
+    for(let j=3; j<6; j++){
+        boxes[j].style.backgroundColor ="white";
+    }
+    //pick winner
+    winner = myRand(2);
+});
+hardButton.addEventListener("click", function makeHard(){
+    gameStyle = "hard";
+    for(let j=0; j<6; j++){
+        boxes[j].style.backgroundColor =colorString(boxColors[j]);
+    }
+    //pick winner
+    winner = myRand(5);
+});

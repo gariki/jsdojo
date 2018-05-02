@@ -1,0 +1,5 @@
+GuessingGame
+* remove bootstrap dependency
+* style elements better
+* add a bit more - Playing again? 
+* refactor code

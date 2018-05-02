@@ -27,3 +27,7 @@ h1{
      height: 200px;
      background-color: pink;
  }
+
+ table{
+    margin: 0px auto;
+}

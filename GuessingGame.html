@@ -19,14 +19,17 @@
     <div  >
         <div class="heading">
             <h3>The Great</h3>
-            <h1>RGB( 100, 120, 140) </h1>
+            <h1>RGB( <span id="redAns" >100</span>,
+                     <span id="greenAns">120</span> , 
+                     <span id="blueAns">140</span>
+                ) </h1>
             <h3>Color Guessing Game!</h3>
         </div>
         
 
         <div class="menubar">
             <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="#">New colors</a></li>
+                <li role="presentation" id="newColors"><a href="#">New colors</a></li>
                 <li role="presentation" id="message" >message</li>
                 <div class="nav nav-pills navbar-right">
                     <li role="presentation" id="easy" ><a href="#">easy</a></li>
@@ -37,14 +40,14 @@
 
         <table>
             <tr>
-                <td class="colorbox">1</td>
-                <td class="colorbox">2</td>
-                <td class="colorbox">3</td>
+                <td class="colorbox"></td>
+                <td class="colorbox"></td>
+                <td class="colorbox"></td>
             </tr>
             <tr>
-                <td class="colorbox">4</td>
-                <td class="colorbox">5</td>
-                <td class="colorbox">6</td>
+                <td class="colorbox"></td>
+                <td class="colorbox"></td>
+                <td class="colorbox"></td>
             </tr>
         </table>
 

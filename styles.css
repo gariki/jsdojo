@@ -1,0 +1,21 @@
+
+
+  .menu {
+    height: 50px;
+    background-color: #B2D6FF;    /* Medium blue */
+  }
+  
+  .sidebar {
+    height: 100px;
+    background-color: #F09A9D;    /* Red */
+  }
+  
+  .content {
+    height: 150px;
+    background-color: #F5CF8E;    /* Yellow */
+  }
+  
+  .footer {
+    height: 75px;
+    background-color: #D6E9FE;    /* Light blue */
+  }

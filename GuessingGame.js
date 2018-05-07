@@ -37,7 +37,7 @@ function generateBoard(){
     //Show puzzleColor in HTML 
     document.getElementById("redAns").innerText = puzzleColor.r;
     document.getElementById("greenAns").innerText = puzzleColor.g;
-    document.getElementById("blueAns").innerText = puzzleColor.b;
+    document.getElementById("blueAns").innerText = puzzleColor.b;   
 }
 
 function printColorPicks(){

@@ -3,3 +3,4 @@ GuessingGame
 * style elements better
 * add a bit more - Playing again? 
 * refactor code
+* add fade animation to boxes & style header and background.

@@ -1,0 +1,9 @@
+#app{
+    margin: 10px auto;
+    border: 1px solid red;
+    width: 40%;
+}
+
+ul{
+    list-style-type: none;
+}

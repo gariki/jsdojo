@@ -9,12 +9,15 @@ inputElement.addEventListener("keyup", function ai(e){
         console.log("enter pressed event triggered.")
         var val = this.value;
         var node = document.createElement("li");
-        var textnode = document.createTextNode(val);
-        var node2 = document.createElement("span");
-        
-        node.appendChild(textnode);
-        todolist.appendChild(node);
-        
+        var textnode = document.createTextNode("<span>X</span>" + val);
+        node.appendChild(textnode);   
+      
+    
+        // var node2 = document.createElement("span");
+        // var textnode2 = document.createTextNode("X");
+        // node2.appendChild(textnode2);
+        // todolist.appendChild(node2);
+         todolist.appendChild(node);
 
         
     }

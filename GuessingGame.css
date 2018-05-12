@@ -11,9 +11,7 @@
 
 }
 
-body{
-    background-color: #252323
-}
+
 h1{
     height: 5rem;
 }
@@ -29,6 +27,7 @@ h1{
      width: 200px;
      height: 200px;
      background-color: pink;
+     
  }
 
  table{

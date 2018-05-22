@@ -4,3 +4,6 @@ GuessingGame
 * add a bit more - Playing again? 
 * refactor code
 * add fade animation to boxes & style header and background.
+
+* battlefield using user input for cells
+* battlefield to use clicking

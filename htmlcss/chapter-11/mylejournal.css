@@ -1,0 +1,152 @@
+
+/* WEB ICON FONT
+  (the social icons that appear
+  in the upper-right corner)
+------------------------------------------ */
+@font-face {
+    font-family: 'Social Icons';
+    src: url("font/socialico-webfont.eot");
+    src: url("font/socialico-webfont.eot?#iefix") format("embedded-opentype"), 
+          url("font/socialico-webfont.woff") format("woff"), 
+          url("font/socialico-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.social-sites {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -3px;
+    top: 41px;
+  }
+
+  .social-sites a{
+    color: green;
+    font-family: 'Social Icons', sans-serif;
+    font-size: 46px;
+    line-height: .8;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.social-sites li{
+    list-style: none;
+    display: inline-block;  
+
+}
+
+.nav-main li{
+    display: inline-block;
+    list-style: none;
+    border-left: 1px solid gray;
+
+}
+
+.nav-main li:first-child{
+    border-left: none;
+}
+
+.nav-main a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    display: inline-block;
+    color: #292929;
+    padding: 0.5em 1em;
+}
+
+.nav-main{
+    border-top: 5px solid green;
+    border-bottom: 1px solid gray;
+    padding:0.3em 0.5em;
+}
+main{
+    width: 600px;
+}
+
+.sidebar{
+    width: 300px;
+}
+
+.about{
+    background-color: #2b2b2b;
+    padding: 0.25em 0.5em 0.5em;
+    color: wheat;
+
+}
+
+.links{
+    padding-left: 0;
+    width: 270px;
+    list-style: none;
+    
+}
+
+.sidebar{
+    padding: 0.5em;
+}
+
+.about img{
+    border: 5px solid #bebebe;
+}
+
+.mod h2{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid gray;
+}
+
+.footer p{
+    font-size: 0.67em;
+}
+
+.post-footer{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 0.7em 0em;
+}
+
+.pagination li{
+    list-style: none;
+    display: inline-block;
+}
+
+.map{
+    margin: 1.5em 0 0.75em;
+}
+
+.links li{
+    margin: 0.5em 0 0.2em;
+}
+
+.page{
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.post-photo{
+    float: left;
+    margin: 0px 22px 2px 0px;
+}
+
+.container{
+    margin: 0px 5px;
+}
+
+main{
+    float:left;
+}
+
+.sidebar{
+    float: right;
+}
+
+footer{
+
+    clear: both;
+
+}

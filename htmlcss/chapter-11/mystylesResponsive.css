@@ -13,13 +13,7 @@
     font-style: normal;
   }
 
-.social-sites {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: -3px;
-    top: 41px;
-  }
+
 
   .social-sites a{
     color: green;
@@ -29,21 +23,34 @@
     vertical-align: middle;
     text-decoration: none;
 }
-.social-sites li{
+.social-sites li, .pagination li {
     list-style: none;
     display: inline-block;  
 
 }
-
 .nav-main li{
-    display: inline-block;
     list-style: none;
-    border-left: 1px solid gray;
+    
 
 }
 
-.nav-main li:first-child{
-    border-left: none;
+*{
+    box-sizing: border-box;
+}
+
+.page{
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+.post-photo, .post-photo-full, .about img, .map{
+    max-width: 100%;
+}
+
+.logo, .social-sites, .nav-main li{
+    padding: 0px;
+    border-left: 0px; 
+    text-align: center;
 }
 
 .nav-main a{
@@ -54,20 +61,7 @@
     font-weight: 700;
     display: inline-block;
     color: #292929;
-    padding: 0.5em 1em;
-}
-
-.nav-main{
-    border-top: 5px solid green;
-    border-bottom: 1px solid gray;
-    padding:0.3em 0.5em;
-}
-main{
-    width: 600px;
-}
-
-.sidebar{
-    width: 300px;
+    
 }
 
 .about{
@@ -77,9 +71,18 @@ main{
 
 }
 
+.post-photo, .post-photo-full{
+    max-width: 100%;
+}
+
+.sidebar img{
+    max-width: 90%;
+}
+
+
 .links{
     padding-left: 0;
-    width: 270px;
+    max-width: 90%;
     list-style: none;
     
 }
@@ -125,28 +128,94 @@ main{
 .page{
     border: 1px solid red;
     margin: 0 auto;
-    width: 960px;
+    max-width: 60em;
+}
+/* ---  End of base sytles ---
+___________________________--- */
+
+ /* --------------- 20em (320px and up) */
+@media only screen and (min-width: 20em){
+    
+.nav-main li{
+    border-left: 1px solid gray;
+    display: inline-block;  
+    
+    text-align: center;
+
 }
 
-.post-photo{
-    float: left;
-    margin: 0px 22px 2px 0px;
+
+.nav-main li:first-child{
+    border-left: none;
 }
 
-.container{
-    margin: 0px 5px;
+.nav-main a{
+    padding: 0.5em 1em;
 }
 
-main{
-    float:left;
+
+.nav-main{
+    border-top: 5px solid purple;
+    border-bottom: 1px solid gray;
+    padding:0.3em 0.5em;
+}
 }
 
-.sidebar{
-    float: right;
+/* ------------- 30em (480px and up) */
+@media only screen and (min-width: 30em){
+
+    .masthead{
+        position:relative;
+    }
+
+    
+.social-sites {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    top: 41px;
+  }
+    
 }
 
-footer{
-
-    clear: both;
-
+/* ------------- 48em  */
+@media only screen and (min-width: 48em){
+    main{
+        width: 62%;
+        float:left;
+    }
+    
+    .sidebar{
+        width: 32%;
+        float: right;
+    }
+    
+    
+    .post-photo{
+        float: left;
+        margin: 0px 22px 2px 0px;
+    }
+    
+    .container{
+        margin: 0px 5px;
+    }
+    
+    
+    footer{
+        clear: both;
+    }
+    
 }
+
+/*
+
+
+
+
+
+
+
+
+
+*/

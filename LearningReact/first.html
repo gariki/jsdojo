@@ -7,12 +7,28 @@
         <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+
+        <style>
+            #container{
+                padding: 50px;
+                background-color: #eee;
+            }
+
+            #container h1{
+                font-size: 48px;
+                font-family: sans-serif;
+                color: orange;
+            }
+        </style>
     </head>
+
     <body>
+        <div id="container"></div>
+       
         <script type="text/babel">
             ReactDOM.render(
                <h1>Chaitanya Garikiparthi</h1>, 
-               document.body
+               document.querySelector('#container')
             );
         </script>
 
